@@ -9,17 +9,14 @@ class Telefone extends Model
 {
     use HasFactory;
 
-    
     protected $table = 'telefone';
 
-    
     protected $fillable = [
         'aluno_id',
         'descricao',
         'numero'
     ];
 
-    
     public function aluno()
     {
         return $this->belongsTo(Aluno::class, 'aluno_id', 'id');

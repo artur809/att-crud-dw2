@@ -34,8 +34,6 @@ Route::get('/telefone',[TelefoneController::class, 'index'])->name('telefone.ind
 Route::post('/aluno/{id}/telefone',[AlunoController::class, 'storeTelefone'])->name('aluno.telefone.store');
 Route::get('/telefone/{id}',[AlunoController::class, 'destroyTelefone'])->name('aluno.telefone.destroy');
 
-
-
 # ROTAS DE EMPRÉSTIMO =============================================================================
 Route::get('/emprestimo',[EmprestimoController::class, 'index'])->name('emprestimo.index');
 Route::get('/emprestimo/create',[EmprestimoController::class, 'create'])->name('emprestimos.create');
